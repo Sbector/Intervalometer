@@ -1,2 +1,3 @@
-# Intervalometer
-An IR intervalometer based on arduino with an android/processing UI
+# Intervalómetro
+
+Un intervalómetro fabricado con arduino.  Sólo compatible con cámaras Nikon operables con el control ML-L3.
