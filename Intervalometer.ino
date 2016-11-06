@@ -53,7 +53,7 @@ void SendSequence()
 
 void loop() {
 
-  Serial.println("Intervalo deseado (segundos)");
+  Serial.println("Intervalo (segundos)");
   while (Serial.available() == 0) { }
   intervalo = Serial.parseFloat();
   Serial.print("\n Intervalo: ");
