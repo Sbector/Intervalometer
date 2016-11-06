@@ -5,7 +5,7 @@ int pulseWidth = 0;
 int state;
 int intervalo = 3;
 int disparos;
-
+ISR(WDT_vect) { Sleepy::watchdogEvent(); }
 
 void setup()
 
@@ -72,7 +72,8 @@ void loop() {
     Serial.print("disparo - ");
     Serial.println(val);
     SendSequence ();
-    delay(intervalo);
+    //delay(intervalo);
+    Sleepy::loseSomeTime(intervalo);
     
   }
   Serial.print("\n");
