@@ -3,7 +3,7 @@
 int outPin = 13;
 int pulseWidth = 0;
 int state;
-int intervalo = 3;
+float intervalo;
 int disparos;
 ISR(WDT_vect) { Sleepy::watchdogEvent(); }
 
@@ -53,12 +53,12 @@ void SendSequence()
 
 void loop() {
 
-  Serial.println("Intervalo deseado(milisegundos)");
+  Serial.println("Intervalo deseado (segundos)");
   while (Serial.available() == 0) { }
-  intervalo = Serial.parseInt();
+  intervalo = Serial.parseFloat();
   Serial.print("\n Intervalo: ");
   Serial.print(intervalo);
-  Serial.println(" ms\n\n");
+  Serial.println(" s\n\n");
 
   Serial.println("Disparos a realizar");
   while (Serial.available() == 0) { }
@@ -73,7 +73,7 @@ void loop() {
     Serial.println(val);
     SendSequence ();
     //delay(intervalo);
-    Sleepy::loseSomeTime(intervalo);
+    Sleepy::loseSomeTime(intervalo*1000);
     
   }
   Serial.print("\n");
