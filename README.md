@@ -8,4 +8,4 @@ Para operar el dispositivo en esta etapa uso una app de android disponible de fo
 
 
 Obtuve la parte del control infrarrojo de este lugar: https://bayesianadventures.wordpress.com/2013/08/09/nikon-ml-l3-ir-remote-hack/
-...y este lugar ayudó con la comunicaciónserial: http://www.toptechboy.com/arduino/arduino-lesson-6-reading-from-the-serial-port/
+...y este lugar ayudó con la comunicación serial: http://www.toptechboy.com/arduino/arduino-lesson-6-reading-from-the-serial-port/
