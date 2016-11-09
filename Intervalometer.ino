@@ -1,3 +1,11 @@
+//Obtuve recursos e ideas de estos dos sitios 
+//y algunos otro más que no recuerdo. El motivo
+//de nombrarlos, es para ayudar a quien investiga
+//y/o experimenta como el objeto que
+//escribe esto.
+//https://bayesianadventures.wordpress.com/2013/08/09/nikon-ml-l3-ir-remote-hack/
+//http://www.toptechboy.com/arduino/arduino-lesson-6-reading-from-the-serial-port/
+
 #include <JeeLib.h>
 
 int outPin = 13;
